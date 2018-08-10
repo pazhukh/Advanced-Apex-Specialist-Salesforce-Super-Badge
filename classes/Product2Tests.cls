@@ -49,8 +49,8 @@ private class Product2Tests {
         c.CollaborationType = 'Public';
         insert c;
         
-        p.Quantity_Ordered__c=96;
-        update p;
+        newProduct.Quantity_Ordered__c=96;
+        update newProduct;
         Test.stopTest();
     } 
     
