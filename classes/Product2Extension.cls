@@ -72,15 +72,18 @@ public class Product2Extension {
 		return options;
     }
     
-    
+  
     public class ProductWrapper{
         public Product2 productRecord {get;set;}
         public PriceBookEntry pricebookEntryRecord {get;set;}
         
-        public ProductWrapper() {
-            productRecord = new Product2(Initial_Inventory__c =0);
-            pricebookEntryRecord = new PricebookEntry(Unitprice=0.0);
-        }
+
+		public ProductWrapper() {
+		productRecord = new Product2(Initial_Inventory__c =0, Name='Test Product', isActive=true); 
+    	pricebookEntryRecord = new PricebookEntry(Unitprice=0.0);        
+          
     }
+    
+}
 
 }
